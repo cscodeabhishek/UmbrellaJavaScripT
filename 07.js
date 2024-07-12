@@ -77,8 +77,11 @@
 // toUpperCase()
 // toLowerCase()
 // slice
-let firstName = " Abhishek      ";
+let firstName = "Abhishek";
 console.log(firstName.length); output: 15 //(includes space as 1 charcater )
 firstName = firstName.trim();
 console.log(firstName);
 console.log(firstName.length)
+console.log(firstName.toUpperCase()); // for upper case 
+console.log(firstName.toLowerCase()); // for lower case
+console.log(firstName.slice(0,4));
