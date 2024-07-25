@@ -18,6 +18,7 @@ console.log(fruits[1]); // mango
 fruits[2] = "kiwi";
 console.log(fruits);// apple, mango, kiwi -- it replace the banana why because it is in the 2th index of array
 console.log(fruits.length);
+console.log(typeof fruits);
 
 // array is object in javascript
 // Importing a module
@@ -37,3 +38,5 @@ const fruitMessage = `First fruit: ${firstFruit}, Second fruit: ${secondFruit}`;
 const numbers = [1, 2, 3, 4, 5];
 const [one, two, ...rest] = numbers;
 const newNumbers = [0, ...numbers, 6];
+////
+// array  is object in javascript
