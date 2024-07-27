@@ -20,3 +20,6 @@ console.log(array1 === array4);// false
 console.log(array1);
 console.log(array2);
 
+let array5 = array1.slice(0).concat(['item4', 'item5', 'item6'])
+console.log(array5);
+
