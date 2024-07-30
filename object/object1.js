@@ -28,14 +28,15 @@
 // }
 // console.log(person1);
 
-const key = "email";
+// const key = "email";
 const person2 = {
     name: "Abhishek",
     age: 22,
     "person hobbies": ["cricket", "listen music", "sleeping"] // to acces "person hobbies" where the space is key used the bracket notationas below
 }
-person2[key]="abhishek@gmail.com";
-console.log(person2);
+
+// person2[key]="abhishek@gmail.com";
+// console.log(person2);
 
 // how to iterate the object
 // for in loop
@@ -45,7 +46,13 @@ console.log(person2);
 // }
 
 
-for (let key in person2) {
-    // console.log(`${key}:${person2[key]}`);  // 1st method
-    console.log(key,":",person2[key]);         // 2nd method
+// for (let key in person2) {
+//     // console.log(`${key}:${person2[key]}`);  // 1st method
+//     console.log(key,":",person2[key]);         // 2nd method
+// }
+
+
+// key object keys
+for(let key of Object.keys(person2)) {
+    console.log(person2[key]);
 }
