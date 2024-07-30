@@ -25,3 +25,4 @@ const object = {};
 obj[key1] = val1;
 obj[key2] = val2;
 console.log(object);
+
