@@ -1,6 +1,6 @@
 // operator in javascript:
 // data type (primitive data type)
-// string "harshit"
+// string "Harshita Thakur"
 // number 2,4,5.6
 // booleans
 // undefined

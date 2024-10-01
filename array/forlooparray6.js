@@ -6,5 +6,5 @@ console.log(fruits[fruits.length - 2]);// output banana
 
 for (let i = 0; i <fruits.length; i++){
     console.log(fruits[i]); // apple banana kiwi
-    console.log(fruits[i].toUpperCase()); // capital letter
+    console.log(fruits[i].toUpperCase()); // capital letter outout is in the uppercase: APPLE BANANA KIWI
 }
