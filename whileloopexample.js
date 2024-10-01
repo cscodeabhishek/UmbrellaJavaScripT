@@ -11,7 +11,7 @@
 // total = total + 6;
 
 // console.log(total);
-
+// here the algorithm is in 0rder of O(n)
 let number = 0;
 let total = 0;
 let i = 0;
@@ -21,6 +21,6 @@ while (i <=1000) {
 }
 console.log(total);
 
-// above can be done without while loop
+// above can be done without while loop here the algorithm is in 0rder of O(1)
 let totaL = (number * (number + 1)) / 2;
 console.log("totaL");
