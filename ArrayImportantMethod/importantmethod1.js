@@ -41,3 +41,15 @@ const num=[1,2,3,4,5];
 num.forEach(function(numb,index){
 console.log(`index is ${index} num is ${numb*2}`);
 });
+//arrow fucntion
+
+const numm=[1,2,3,4,5];
+numm.forEach((numb,index)=>{
+console.log(`index is ${index} num is ${numb*2}`);
+});
+const users=[
+    {firstName: "Abishek",age:27},
+]
+for(let user of users){
+    console.log(user.firstName,user.age);
+}
