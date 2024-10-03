@@ -36,6 +36,7 @@ for(let i=0; i<numbersss.length;i++){
     multiplyBy2([i],i);
 }
 
+// for each 
 const num=[1,2,3,4,5];
 num.forEach(function(numb,index){
 console.log(`index is ${index} num is ${numb*2}`);
