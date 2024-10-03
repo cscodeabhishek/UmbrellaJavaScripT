@@ -1,6 +1,6 @@
 // An arrow function is a more concise way to write functions in JavaScript, introduced in ES6 (ECMAScript 2015). 
 // Arrow functions use the => syntax and have some key differences from regular functions, particularly in how they handle the this keyword.
-// normal fucntion
+// normal function
 function GTAPlayer(){
     console.log("thakur plays GTA6 game in his Laptop");
 }
@@ -15,8 +15,8 @@ function singHappyBirthday(){
 }
  singHappyBirthday()
 
-// fucntion expression
-const singHappyBirthdayy= function(){
+// function expression
+const singHappyBirthdayy = function(){
     console.log("happy birthday harshita thakur");
 }
 singHappyBirthdayy()

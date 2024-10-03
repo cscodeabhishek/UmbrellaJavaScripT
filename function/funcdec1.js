@@ -1,4 +1,4 @@
-"use strict"; //this should be declared on line first itself to avoid the uncaughtReference error, so here you need to define the frirstName as var firstName and below same
+"use strict"; //this should be declared on line first itself to avoid the uncaughtReference error, so here you need to define the firstName as var firstName and below same
 console.log("this is working now");
 
 var firstName="Abhishek";

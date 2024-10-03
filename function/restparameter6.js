@@ -6,8 +6,8 @@ function restParamter(a,b,c,...d){
 }
 restParamter(1,2,3,5,6,7,8,9,9)
 
-function addall(...numbers){
-    let total =0;
+function addAll(...numbers){
+    let total = 0;
     for(let number of numbers){
         total=total+number;
     }

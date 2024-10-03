@@ -4,7 +4,7 @@ function singHappyBirthday(){
 function AddTwoNumber(num1,num2){
     return num1 + num2 ;
 }
-const returnedNum =AddTwoNumber(2,4);
+const returnedNum = AddTwoNumber(2,4);
 console.log(returnedNum);
 console.log(undefined +undefined); // output is NaN=not a number
 

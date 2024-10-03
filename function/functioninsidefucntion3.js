@@ -1,3 +1,4 @@
+// function inside function
 function declaration(){
     const func = ()=> {
         console.log("game is on");
