@@ -50,11 +50,6 @@ const count = letters.reduce((acc, letter) => {
 
 //leetcode problem for this:
 // Given an array of integers, your task is to find the sum of minimum values from all possible subarrays of the array.
-
-const array=[3,1,2,4];
-//const addedArray = array.reduce((acc,curentmin)=>(acc===acc.length ? acc.vlaue : curentmin ));
-const addedArray = sumOfSubarrayMinimums(array);
-console.log(addedArray);
   
 function sumOfSubarrayMinimums(arr) {
     let totalSum = 0; // Initialize a variable to store the total sum
@@ -66,8 +61,7 @@ function sumOfSubarrayMinimums(arr) {
       // Inner loop: Create subarrays starting from the current element
       for (let j = i; j < arr.length; j++) {
         // Update the current minimum if a smaller number is found
-        currentMin = Math.min(currentMin, arr[j]);
-  
+        currentMin = Math.min(currentMin, arr[j]); // Math.min is used here to store the current in value
         // Add the current minimum to the total sum
         totalSum += currentMin;
       }
