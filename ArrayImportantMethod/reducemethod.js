@@ -14,7 +14,7 @@ const numbers=[1,2,3,4,5,56];
 const sumALL =numbers.reduce((accumulator ,currentValue )=>{
     return accumulator + currentValue
 });
-// other way is lik
+// other way is like
 // const sumAll = numbers.reduce((accumulator,curentvalue) => accumulator + curentvalue, 0);
 // console.log(sumAll); 
 console.log(sumALL);
@@ -58,10 +58,10 @@ function sumOfSubarrayMinimums(arr) {
     for (let i = 0; i < arr.length; i++) {
       let currentMin = arr[i]; // Assume the current element is the minimum
   
-      // Inner loop: Create subarrays starting from the current element
-      for (let j = i; j < arr.length; j++) {
+      // Inner loop: Create subarrays starting from the current element We want j to start at the same position as i so that each subarray begins with the element at index i.
+      for (let j = i; j < arr.length; j++) { // j=i why ? because we want the
         // Update the current minimum if a smaller number is found
-        currentMin = Math.min(currentMin, arr[j]); // Math.min is used here to store the current in value
+        currentMin = Math.min(currentMin, arr[j]); // Math.min is used here to store the current minimum value
         // Add the current minimum to the total sum
         totalSum += currentMin;
       }
@@ -75,3 +75,15 @@ function sumOfSubarrayMinimums(arr) {
   const result = sumOfSubarrayMinimums(array);
   console.log(result); // Output: 17
   
+
+  
+const shopingCart =[
+  {productName: "AppleLaptop", productPrice:12000},
+  {productName: "DellLaptop", productPrice:12000},
+  {productName: "LenovoLaptop", productPrice:12000},
+  {productName: "ASuSLaptop", productPrice:12000},
+]
+ const totalAmount = shopingCart.reduce((prodPrice, curentPrice)=>{
+  return prodPrice + curentPrice.productPrice
+ },0);
+ console.log(totalAmount);
