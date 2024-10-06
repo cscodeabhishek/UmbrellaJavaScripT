@@ -33,3 +33,28 @@ const products = [
   console.log(products);
   // Output: [{Keyboard}, {Laptop}, {Mouse}]
   
+// ecommerce price low to high method
+const productss=[
+  {productId:1,prdoductName:"iphone16pro",productPrice: 620000},
+  {productId:2,prdoductName:"iphone15pro",productPrice: 240000},
+  {productId:3,prdoductName:"iphone14pro",productPrice: 260000},
+  {productId:4,prdoductName:"iphone13pro",productPrice: 280000},
+  {productId:5,prdoductName:"iphone12pro",productPrice: 320000}
+];
+productss.sort((a,b)=>{
+  return a.productPrice-b.productPrice
+});
+console.log(productss);
+
+// ecommerce price low to high method
+const prod=[
+  {productId:1,prdoductName:"iphone16pro",productPrice: 20000},
+  {productId:2,prdoductName:"iphone15pro",productPrice: 240000},
+  {productId:3,prdoductName:"iphone14pro",productPrice: 260000},
+  {productId:4,prdoductName:"iphone13pro",productPrice: 280000},
+  {productId:5,prdoductName:"iphone12pro",productPrice: 320000}
+];
+prod.sort((b,a)=>{ 
+  return a.productPrice-b.productPrice
+});
+console.log(prod);

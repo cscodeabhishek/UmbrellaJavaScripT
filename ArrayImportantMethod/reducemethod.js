@@ -76,7 +76,7 @@ function sumOfSubarrayMinimums(arr) {
   console.log(result); // Output: 17
   
 
-  
+//ZPO addcart calulate method
 const shopingCart =[
   {productName: "AppleLaptop", productPrice:12000},
   {productName: "DellLaptop", productPrice:12000},
