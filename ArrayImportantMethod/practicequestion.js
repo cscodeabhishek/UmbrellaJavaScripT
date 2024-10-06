@@ -26,3 +26,47 @@ function palindrome(str){
 }
 console.log(palindrome("thakur"));
 
+//1.) Reverse a String------------------->
+function reverseString(str){
+    return str.split('').reverse().join('');
+}
+console.log(reverseString("hello"));
+
+
+// 2.) Palindrome Check
+function isPalindrome(str) {
+    const reversedStr = str.split('').reverse().join('');
+    return str === reversedStr;
+}
+
+console.log(isPalindrome("racecar"));  // Output: true
+console.log(isPalindrome("hello"));    // Output: false
+
+// 3.)Anagram check
+
+function areAnagrams(str1, str2) {
+    const formatString = (str) => str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+    return formatString(str1) === formatString(str2);
+}
+
+console.log(areAnagrams("listen", "silent"));  // Output: true
+console.log(areAnagrams("hello", "world"));    // Output: false
+
+//4.) Find the Maximum Number in an Array
+
+function findMax(arr) {
+    return Math.max(...arr);
+}
+
+console.log(findMax([10, 20, 30, 40, 50]));  // Output: 50
+
+// 5.)
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
+
+console.log(removeDuplicates([1, 2, 3, 3, 4, 5, 5]));  // Output: [1, 2, 3, 4, 5]
+
+
+
+
