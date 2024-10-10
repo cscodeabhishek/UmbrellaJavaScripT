@@ -9,7 +9,7 @@ if (age >= 8) {
 console.log(drink); 
 
 // instead of doing all this above we can do this with ternary operator in very simple way
-//ternary operator // also called as conditioner operator
+//ternary operator // also called as conditional operator
 
 let newAge = 2;
 let drinks = newAge >= 1 ? "coffe" : "milk";

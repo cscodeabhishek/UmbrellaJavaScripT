@@ -68,5 +68,15 @@ function removeDuplicates(arr) {
 console.log(removeDuplicates([1, 2, 3, 3, 4, 5, 5]));  // Output: [1, 2, 3, 4, 5]
 
 
+function reverseString(str) {
+    let reversed = ''; // Initialize an empty string to hold the reversed result
+    for (let i = str.length - 1; i >= 0; i--) { // Loop through the string from the end to the beginning
+        reversed += str[i]; // Concatenate each character to the reversed string
+    }
+    return reversed; // Return the reversed string
+}
 
+// Example usage
+console.log(reverseString("hello")); // Output: "olleh"
+console.log(reverseString("world")); // Output: "dlrow"
 
