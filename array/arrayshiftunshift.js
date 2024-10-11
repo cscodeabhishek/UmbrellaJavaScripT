@@ -6,5 +6,5 @@ console.log(fruits);
 // console.log(fruits);
 // fruits.shift();
 // console.log(fruits);
-let removedFruits = fruits.shift(); // shift from starting // removed from
+let removedFruits = fruits.shift(); // shift removed from starting element of an array
 console.log("removed fruits is", removedFruits)

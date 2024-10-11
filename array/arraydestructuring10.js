@@ -9,7 +9,8 @@ const myArray = ['value1', 'value2'];
 // In other programming language same practice can be done to store the value
 // but in javascript provide shortcut for this
 
-// Array Destructuring:Array destructuring is a convenient way to extract elements from an array and assign them to variables. It makes your code more concise and readable. 
+// Array Destructuring:Array destructuring is a convenient way to extract elements from an array and assign them to variables.
+// It makes your code more concise and readable. 
 // basic example
 const numbers = [1, 2, 3];
 
@@ -135,7 +136,7 @@ for (const { name, age } of people) {
 // Abhishek Thakur is 26 years old
 // Shweta is 26 years old
 // Reetika is 25 years old
-// Radhika is 25 years old
+// Rohit is 25 years old
 
 // Destructuring with Promises
 // Destructuring can be used to handle multiple promises and their results.
