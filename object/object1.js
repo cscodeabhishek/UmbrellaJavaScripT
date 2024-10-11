@@ -7,7 +7,8 @@
 // Properties are the keys (or names) in an object, and they can be strings or symbols.
 // Values can be any valid JavaScript value, including other objects, arrays, functions, or primitive data types (strings, numbers, etc.).
 
-// Objects in JavaScript are fundamental to the language and are used extensively for a wide variety of purposes, from simple data storage to the basis of more complex constructs such as classes and modules.
+// Objects in JavaScript are fundamental to the language and are used extensively for a wide variety of purposes, 
+// from simple data storage to the basis of more complex constructs such as classes and modules.
 
 // const person = { name: "Thakur", age: 25 }
 // console.log(person);
