@@ -124,8 +124,8 @@ configure();
 const people = [
   { name: "Abhishek Thakur", age: 26 },
   { name: "Shweta", age: 26 },
-  { name: "Reetika", age: 25 },
-  { name: "Radhika", age:24 }
+  { name: "Reetika", age: 26 },
+  { name: "Radhika", age:26 }
 ];
 
 for (const { name, age } of people) {
@@ -158,11 +158,11 @@ function* numbers() {
   yield 3;
 }
 
-const [first, second, third] = numbers();
+const [firstt, second, thirdd] = numbers();
 
-console.log(first); // 1
+console.log(firstt); // 1
 console.log(second); // 2
-console.log(third); // 3
+console.log(thirdd); // 3
 
 
 // Nested Destructuring with Function Returns
