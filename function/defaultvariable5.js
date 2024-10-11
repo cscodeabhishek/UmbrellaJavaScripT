@@ -13,5 +13,5 @@ function addTwoNumber(a,b=0){ // passing a and b here as parameter / here js alo
     // take 0 other else if you are passing the argument b also it will take tha only for basic operation that you are doing
     return a+b; // returning here the parameter that is passed
 }
-const anss= addTwoNumber(6); // passing arguments a and b here which is 6,9
+const anss= addTwoNumber(6); // passing arguments a here as 6 but not b . So it will take the value of parameter which is defined in the defualt parameter 0
 console.log(anss); 

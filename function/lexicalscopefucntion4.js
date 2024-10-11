@@ -1,5 +1,5 @@
 // lexical scope in javascript
-//Definition: Lexical Scope in JavaScript refers to the way the scope of a variable is determined by its position in the code (where it is written), 
+// Definition: Lexical Scope in JavaScript refers to the way of the scope of a variable is determined by its position in the code (where it is written), 
 // not by how or where it is called. In simpler terms, where you define your variables and functions in the code matters.
 
 // Think of it like this:

@@ -13,5 +13,5 @@ function addAll(...numbers){
     }
     return total
 }
-var cost =addall(1,3,5,6,7,9)
+var cost =addAll(1,3,5,6,7,9)
 console.log(cost);
