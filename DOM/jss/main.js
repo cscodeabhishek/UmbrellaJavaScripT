@@ -212,7 +212,14 @@ function changeTheme(color) {
 // mainHeadngg.style.backgroundColor= "white";
 
 // Get and Set attribute in javascript 
-const link = document.querySelector("a"); // get attribute here 
-console.log(link.getAttribute("href"));
-link.setAttribute("href","https://www.crazygames.com/game/night-city-racing"); // setting here the particular URL 
-console.log(link.setAttribute(href));
+// const link = document.querySelector("a"); // get attribute here 
+// console.log(link.getAttribute("href"));
+// link.setAttribute("href","https://www.crazygames.com/game/night-city-racing"); // setting here the particular URL 
+// console.log(link.setAttribute(href));
+
+//get multiple element using getElementByClassName
+// get multiple element using Queryselectorall
+const navItem = document.getElementsByClassName("standard-theme theme-selector") //getElementByClassName gives html selection 
+console.log(navItem);
+const navItemm = document.getAnimations.querySelectorAll(".standard-theme theme-selector") //getElementByClassName gives html selection 
+console.log(navItemm);
