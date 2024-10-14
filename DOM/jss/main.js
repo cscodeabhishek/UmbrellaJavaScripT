@@ -199,13 +199,20 @@ function changeTheme(color) {
         });
     });
 }
+// by ID
 // const mainHeadng = document.getElementById("title");
 // console.log(mainHeadng.textContent);
 // mainHeadng.textContent = "Your Task";
 // console.log(mainHeadng.textContent);
 
-//  changing the style  of element
-const mainHeadngg =document.querySelector("#title.darker-title");
-console.log(mainHeadngg.style);
-mainHeadngg.style.color= "red";
-mainHeadngg.style.backgroundColor= "white                                                                                                                                                                                                                                                                                                                                                   ";
+// //  changing the style  of element
+// const mainHeadngg =document.querySelector("#title.darker-title");
+// console.log(mainHeadngg.style);
+// mainHeadngg.style.color= "red";
+// mainHeadngg.style.backgroundColor= "white";
+
+// Get and Set attribute in javascript 
+const link = document.querySelector("a"); // get attribute here 
+console.log(link.getAttribute("href"));
+link.setAttribute("href","https://www.crazygames.com/game/night-city-racing"); // setting here the particular URL 
+console.log(link.setAttribute(href));
