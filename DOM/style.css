@@ -21,6 +21,11 @@ body {
     transition: 0.3s linear;
     overflow: hidden;
 }
+.buttono{
+    margin-top: 20px;
+    background-color: rgb(8, 77, 25);
+    border: none !important;
+}
 
 .light {
     background-image: linear-gradient(100deg, #d4f1ff, #ffffff);

@@ -35,8 +35,8 @@ function addToDo(event) {
     // Create LI
     const newToDo = document.createElement('li');
     if (toDoInput.value === '') {
-            alert("You must write something!");
-        } 
+        alert("You must write something!");
+    }
     else {
         // newToDo.innerText = "hey";
         newToDo.innerText = toDoInput.value;
@@ -64,17 +64,16 @@ function addToDo(event) {
         toDoInput.value = '';
     }
 
-}   
+}
 
 
-function deletecheck(event){
+function deletecheck(event) {
 
     // console.log(event.target);
     const item = event.target;
 
     // delete
-    if(item.classList[0] === 'delete-btn')
-    {
+    if (item.classList[0] === 'delete-btn') {
         // item.parentElement.remove();
         // animation
         item.parentElement.classList.add("fall");
@@ -82,14 +81,13 @@ function deletecheck(event){
         //removing local todos;
         removeLocalTodos(item.parentElement);
 
-        item.parentElement.addEventListener('transitionend', function(){
+        item.parentElement.addEventListener('transitionend', function () {
             item.parentElement.remove();
         })
     }
 
     // check
-    if(item.classList[0] === 'check-btn')
-    {
+    if (item.classList[0] === 'check-btn') {
         item.parentElement.classList.toggle("completed");
     }
 
@@ -98,10 +96,10 @@ function deletecheck(event){
 
 
 // Saving to local storage:
-function savelocal(todo){
+function savelocal(todo) {
     //Check: if item/s are there;
     let todos;
-    if(localStorage.getItem('todos') === null) {
+    if (localStorage.getItem('todos') === null) {
         todos = [];
     }
     else {
@@ -117,21 +115,21 @@ function savelocal(todo){
 function getTodos() {
     //Check: if item/s are there;
     let todos;
-    if(localStorage.getItem('todos') === null) {
+    if (localStorage.getItem('todos') === null) {
         todos = [];
     }
     else {
         todos = JSON.parse(localStorage.getItem('todos'));
     }
 
-    todos.forEach(function(todo) {
+    todos.forEach(function (todo) {
         // toDo DIV;
         const toDoDiv = document.createElement("div");
         toDoDiv.classList.add("todo", `${savedTheme}-todo`);
 
         // Create LI
         const newToDo = document.createElement('li');
-        
+
         newToDo.innerText = todo;
         newToDo.classList.add('todo-item');
         toDoDiv.appendChild(newToDo);
@@ -153,17 +151,17 @@ function getTodos() {
 }
 
 
-function removeLocalTodos(todo){
+function removeLocalTodos(todo) {
     //Check: if item/s are there;
     let todos;
-    if(localStorage.getItem('todos') === null) {
+    if (localStorage.getItem('todos') === null) {
         todos = [];
     }
     else {
         todos = JSON.parse(localStorage.getItem('todos'));
     }
 
-    const todoIndex =  todos.indexOf(todo.children[0].innerText);
+    const todoIndex = todos.indexOf(todo.children[0].innerText);
     // console.log(todoIndex);
     todos.splice(todoIndex, 1);
     // console.log(todos);
@@ -177,14 +175,14 @@ function changeTheme(color) {
 
     document.body.className = color;
     // Change blinking cursor for darker theme:
-    color === 'darker' ? 
+    color === 'darker' ?
         document.getElementById('title').classList.add('darker-title')
         : document.getElementById('title').classList.remove('darker-title');
 
     document.querySelector('input').className = `${color}-input`;
     // Change todo color without changing their status (completed or not):
     document.querySelectorAll('.todo').forEach(todo => {
-        Array.from(todo.classList).some(item => item === 'completed') ? 
+        Array.from(todo.classList).some(item => item === 'completed') ?
             todo.className = `todo ${color}-todo completed`
             : todo.className = `todo ${color}-todo`;
     });
@@ -192,12 +190,22 @@ function changeTheme(color) {
     document.querySelectorAll('button').forEach(button => {
         Array.from(button.classList).some(item => {
             if (item === 'check-btn') {
-              button.className = `check-btn ${color}-button`;  
+                button.className = `check-btn ${color}-button`;
             } else if (item === 'delete-btn') {
-                button.className = `delete-btn ${color}-button`; 
+                button.className = `delete-btn ${color}-button`;
             } else if (item === 'todo-btn') {
                 button.className = `todo-btn ${color}-button`;
             }
         });
     });
 }
+// const mainHeadng = document.getElementById("title");
+// console.log(mainHeadng.textContent);
+// mainHeadng.textContent = "Your Task";
+// console.log(mainHeadng.textContent);
+
+//  changing the style  of element
+const mainHeadngg =document.querySelector("#title.darker-title");
+console.log(mainHeadngg.style);
+mainHeadngg.style.color= "red";
+mainHeadngg.style.backgroundColor= "white                                                                                                                                                                                                                                                                                                                                                   ";
