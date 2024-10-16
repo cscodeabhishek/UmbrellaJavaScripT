@@ -9,5 +9,5 @@ for(let i=0;i<100;i++){
 }
 console.log("settimeout is", ID);
 console.log("clearing timeout");
-clearTimeout(ID); // this clearout is not getting to get executed the settimeout arrow function
+clearTimeout(ID); // this clearout is not getting executed because of this clearTimeout(ID)timeout.
 console.log("now execute the settimeout");
