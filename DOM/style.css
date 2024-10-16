@@ -40,7 +40,7 @@ body {
 }
 
 #header, #form, #datetime {
-    margin: 0 1rem;
+    margin: 0 8rem;
     min-height: 10vh;
     width: 100%;
 }
