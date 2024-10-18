@@ -40,9 +40,36 @@ setTimeout(() => {
 //pyramid DOOM
 function pyramid(element,text,color,time){
     setTimeout(() => {
-       element.textContent="text";
-       element.style.color="color" 
+        if(element){
+        element.textContent="text";
+        element.style.color="color" 
+        if (onSucessCallback){
+            onSucessCallback();
+        }else{
+            if(failureCallback){
+              failureCallback();
+            }
+        }
+        }
     }, timeout);
-
 }
 
+
+// Pyramid of Doom structure with nested callbacks
+pyramid(heading1, "One", "pink", 1000, () => {
+    pyramid(heading2, "Two", "grey", 2000, () => {
+        pyramid(heading3, "Three", "red", 1000, () => {
+            pyramid(heading4, "Four", "blue", 2000, () => {
+                pyramid(heading5, "Five", "yellow", 1000, () => {
+                    pyramid(heading6, "Six", "green", 2000, () => {
+                        pyramid(heading7, "Seven", "grey", 1000, () => {
+                            console.log("All headings updated in pyramid of doom!");
+                        });
+                    });
+                });
+            });
+        });
+    });
+}, (error) => {
+    console.error("Error: ", error); // Handle failure if any
+});
