@@ -18,7 +18,10 @@ Next.js: Discover server-side rendering and static site generation for your Reac
 
 How to Get Started:
 Clone the Repository:>>>>>>>>>>
+
 git clone <https://github.com/cscodeabhishek/UmbrellaJavaScripT.git>
+
+
 Start Learning: Open the files, read the notes, and practice the code.
 
 Join the Journey
