@@ -2,7 +2,7 @@ const user1={
     firtsName: "abhishek",
     age: 8,
     about: function(){
-        console.log(this.firtsName, this.age)
+        console.log(this.firtsName, this.age) // you can also declared this out of user1 object 
     }
 }
 const user2={
