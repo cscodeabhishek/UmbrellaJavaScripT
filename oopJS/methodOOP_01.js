@@ -31,7 +31,7 @@ const person1= {
     about: personnInfo
 }
 const person2= {
-    firstName: "Abhishek Thakur",
+    firstName: "Garima Thakur",
     age: 22,
     about: personnInfo
 }

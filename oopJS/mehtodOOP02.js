@@ -2,7 +2,7 @@ console.log(this)
 console.log(window)
 
 function objectingCheck(){
-    "use strict" // because of this output changes  from window object to the "Undefined"
+    "use strict" // because of this output change from window object to the "Undefined"
     console.log(this);
 }
 objectingCheck()
