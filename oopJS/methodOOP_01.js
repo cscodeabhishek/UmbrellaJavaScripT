@@ -1,4 +1,4 @@
-//Method: Function inside object 
+//Method: Function inside object is called method. 
 const person= {
     firstName: "Abhishek Thakur",
     age: 22,
