@@ -95,3 +95,13 @@ console.log(fruitssssss);
 let fruiits =["apple","banana"];
 fruiits.forEach(fruiit => console.log(fruiit));
 
+// Event Delegation
+// Imagine This:
+// Let’s say you’re at a party, and there’s a host (the parent) who wants to greet everyone. Instead of the host running around and greeting each person individually, 
+// they stand near the entrance (the event listener on the parent). As each guest (the child element) arrives, the host can greet them as they walk in.
+
+// In JavaScript Terms:
+// Event delegation is like assigning one person (a single event listener) to handle things for a group (many child elements) by standing in one spot (the parent element) and listening to see who does something (clicks, submits, etc.).
+
+// Why Use It?
+// If you have 100 buttons, instead of adding a listener to each button, you add one listener to the button's container. When a button is clicked, that listener can figure out exactly which button was clicked and handle it.
