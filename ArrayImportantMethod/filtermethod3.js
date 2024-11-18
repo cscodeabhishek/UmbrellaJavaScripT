@@ -14,7 +14,7 @@ const numberss=[1,2,3,4,5];
 const isOdd=function(number){
     return number%2!==0; // here it will always return the boolean value
 }
-const isOddArray=numberss.filter(isOdd) // this is your callback fucntion which is callinf the isOdd fucntin and executing the instruction inside the function expression
+const isOddArray=numberss.filter(isOdd) // this is your callback function which is calling the isOdd fucntin and executing the instruction inside the function expression
 console.log(isOddArray);
 
 
