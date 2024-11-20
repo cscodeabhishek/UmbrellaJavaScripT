@@ -1,5 +1,5 @@
 // Intro to arrays
-//how to create arrays
+// how to create arrays
 // array indexing
 
 //In JavaScript, arrays are a versatile data structure used to store multiple values in a single variable. Here are some key points about arrays in JavaScript
