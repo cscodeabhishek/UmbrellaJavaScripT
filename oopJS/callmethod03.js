@@ -1,3 +1,12 @@
+// In JavaScript, functions are first-class citizens, meaning they can be treated like objects. 
+// The call, apply, and bind methods allow you to control the value of this in a function.
+
+// call: Calls the function immediately, passing arguments one by one.
+
+// apply: Calls the function immediately, passing arguments as an array.
+
+// bind: Does not call the function immediately. Instead, it creates a new function with this bound to the specified value.
+
 const user1 = {
     firtsName: "abhishek",
     age: 18,
