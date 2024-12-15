@@ -2,7 +2,7 @@
 // const user ={
 //     firstName: "Harshita",
 //     lastName: "thakur",
-//     email: "harshey1998@gmail.com",
+//     email: "harshita1998@gmail.com",
 //     age: 25,
 //     address: "Mandi House New Delhi",
 //     about: function(){
