@@ -1,18 +1,16 @@
-// function hello(){
-//     console.log("hello World");
-// }
+function hello(){
+    console.log("hello World");
+}
 // // In javascript function is function===> but you can treat them as like Object also.....
 
-const obj=Object.freeze({
-    name:"alice",
-    info:{
-        age:25
-    }
-});
-try{
-    obj.name="Bob",
-    obj.info.age=30;
-}catch(e){
-    console.log("error:",e.message);
+//write your own property in javascript
+hello.myOwnProperty ="very unique value";
+console.log(hello.myOwnProperty);
+
+// only function provide prototype property
+hello.prototype.abc="abc";
+hello.prototype.xyz="xyz";
+hello.prototype.sing= function(){
+    return "songggg"
 }
-console.log(obj.name,obj.info.age);
+console.log(hello.prototype.sing());
