@@ -49,3 +49,24 @@ function Person(name, age) {
   console.log(person1.name); // Output: Abhishek
   console.log(person2.age);  // Output: 23
   
+// Example of a Constructor Function:
+  
+  class Car {
+    constructor(brand, color, speed) {
+        this.brand = brand;
+        this.color = color;
+        this.speed = speed;
+
+        // Method to show car details
+        this.showDetails = function () {
+            return `${this.color} ${this.brand} runs at ${this.speed} km/h`;
+        };
+    }
+}
+  
+  // Using the constructor function to create objects
+  let car1 = new Car("Toyota", "Red", 150);
+  let car2 = new Car("Honda", "Blue", 180);
+  
+  console.log(car1.showDetails()); // Output: Red Toyota runs at 150 km/h
+  console.log(car2.showDetails()); // Output: Blue Honda runs at 180 km/h
