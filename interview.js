@@ -213,3 +213,25 @@ class LRUCache {
         }
     }
 }
+
+// important concept of freeze object in javascript
+const objj = Object.freeze({
+    name: "alice", // Directly frozen property
+    info: {        // Nested object (not frozen)
+        age: 25
+    }
+});
+
+// Trying to modify the name property
+try {
+    objj.name = "Bob"; // This will fail silently or throw an error (in strict mode).
+
+    objj.info.age = 30; // This succeeds because `info` is not frozen.
+} catch (e) {
+    console.log("error:", e.message); // Logs the error if objj.name throws one.
+}
+
+console.log(objj.name, objj.info.age); // Outputs: "alice 30"
+
+// output: alice 30 because the freeze method only affect top level objects properties and can not effect nested object properties
+// code explanation:

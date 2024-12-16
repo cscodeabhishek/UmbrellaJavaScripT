@@ -1,4 +1,3 @@
-//New keyword
 function user1(firstName,lastName,age,email,address){
     const ust ={};
     ust.firstName = firstName;
@@ -14,7 +13,7 @@ function user1(firstName,lastName,age,email,address){
     }
     return ust;
 }
-const userin = user1("harshita","thakur","harshi@gmail.com",25,"Mandi House");
+const userin = user1("Abhishek","thakur","harshi@gmail.com",25,"Mandi White House");
 console.log(userin);
 const userAge = ust.is18();
 console.log(userAge);
