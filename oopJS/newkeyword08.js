@@ -48,9 +48,10 @@ function Person(name, age) {
   
   console.log(person1.name); // Output: Abhishek
   console.log(person2.age);  // Output: 23
+
+
   
-// Example of a Constructor Function:
-  
+// Example of a Constructor Function: 
   class Car {
     constructor(brand, color, speed) {
         this.brand = brand;
