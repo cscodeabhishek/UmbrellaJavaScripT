@@ -22,6 +22,8 @@ function user1(firstName,lastName,age,email,address){
     return ust;
 }
 // function provide free space so we can add the prototype here
+// only function provide the prototype property
+
 user1.prototype.about= function(){
     return `${this.firstName},${this.lastName},${this.age} years old`;
 }
@@ -33,3 +35,4 @@ user1.prototype.sing= function(){
 }
 console.log(user1.prototype);
 const userin = user1("Abhishek","thakur","harshi@gmail.com",25,"Mandi White House");
+

@@ -71,3 +71,21 @@ function Person(name, age) {
   
   console.log(car1.showDetails()); // Output: Red Toyota runs at 150 km/h
   console.log(car2.showDetails()); // Output: Blue Honda runs at 180 km/h
+
+  function Person(name) {
+    this.name = name;
+  }
+  Person.prototype.greet = function () {
+    console.log(`Hello, my name is ${this.name}`);
+  };
+  
+  const john = new Person("John");
+  john.greet(); // Outputs: Hello, my name is John
+  console.log(john.__proto__ === Person.prototype); // true
+  //What Happens Here?
+// A constructor function Person is defined.
+// It takes a parameter name and assigns it to the name property of the object being created using this.
+// Key Points:
+
+// When you use new Person("John"), a new object is created, and this refers to that new object.
+// This is how instance-specific properties like name are set.
