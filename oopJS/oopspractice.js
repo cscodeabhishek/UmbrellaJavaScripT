@@ -109,6 +109,15 @@ const myperson6={
 const newfun=userInfo.bind(myperson5,"guitar","last ride");
 console.log(newfun);
 
+//arrow fucntion dont have this
+const newPer={
+    firstName:"abhishek",
+    age:8,
+    about:()=>{
+        console.log(this.firstName,this.age);
+    }
+}
+newPer.about(); // output  undefined undefined // arrow function take his this from near surrounding
 
 
 
