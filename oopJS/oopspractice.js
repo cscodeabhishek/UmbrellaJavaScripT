@@ -109,6 +109,19 @@ const myperson6={
 const newfun=userInfo.bind(myperson5,"guitar","last ride");
 console.log(newfun);
 
+
+// avoid mistakes as javascript developer
+const persn={
+    firstName:"Abhishek",
+    age:19,
+    about:function(){
+        console.log(this.firstName, this.age);
+    }
+}
+const funky = persn.about.bind(persn); //The bind method creates a new function, binding the this keyword to the persn object.
+funky(); // funky is invoked. Since it's bound to persn, it correctly prints.
+
+
 //arrow fucntion dont have this
 const newPer={
     firstName:"abhishek",
