@@ -7,4 +7,10 @@
 
 // Closures are often used to create data privacy, as they allow the function to access variables outside its immediate lexical scope 
 // without exposing them to the global scope.
-
+function personName(){
+    function personFullName(){
+        console.log(firstName,lastName);
+    } return personFullName;
+}
+const ans = personName("Abhishek","thakur");
+ans();// this is cALLED CLOSURES
