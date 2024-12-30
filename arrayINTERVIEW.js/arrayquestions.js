@@ -29,7 +29,6 @@ console.log(fruits3);
 
 // Adds one or more elements to the beginning of an array and returns the new length.
 
-
 // 5. map()
 // Creates a new array with the results of calling a function on every element in the array.
 let numbers = [1,2,3];
