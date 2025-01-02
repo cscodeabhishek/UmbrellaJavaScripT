@@ -15,11 +15,11 @@ const square =function(number){
 const squareNumber = numbersss.map(square); // here it won't printing the output because map method always return the new array from the orginal array by applying some operation on it
 console.log(squareNumber); // here it will print output as [1,4,9,16,25]
 
-// example 2
+// example 3
 const numb=[1,2,3,4,5];
 const squaree =function(number){
     // return number * number; // instead of this if you console here like this 
-    console.log(number*number); // it will give you the output as [1 ,4,9,16,25] but resultant output of map method got disturbed because map method always return the new array from the orginal array and here it will return you undefined array
+    console.log(number*number); // it will give you the output as [1,4,9,16,25] but resultant output of map method got disturbed because map method always return the new array from the orginal array and here it will return you undefined array
 }
 const squareNumberr = numbersss.map(square); 
 console.log(squareNumberr);
