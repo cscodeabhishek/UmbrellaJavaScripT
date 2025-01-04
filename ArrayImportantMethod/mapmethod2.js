@@ -24,3 +24,6 @@ const squaree =function(number){
 const squareNumberr = numbersss.map(square); 
 console.log(squareNumberr);
 // In forEach use console.log  but in map method always used return (so it will return you the array )
+//The forEach method in JavaScript is used to execute a function for each element in an array.
+//It is a simple and readable way to iterate over arrays without manually managing a loop counter.
+

@@ -68,26 +68,33 @@ console.log(maxSubarr(nums));
 
 
 
-function about(hobby, music){
-    console.log(this.firstName, this.age,hobby,music);
-}
-const person1={
-firstName: "Abhishek",
-age:28
-}
-const person2={
-firstName: "Abhishek",
-age:18
-}
-about.apply(person1,["dance","bandeya"]);
+// function about(hobby, music){
+//     console.log(this.firstName, this.age,hobby,music);
+// }
+// const person1={
+// firstName: "Abhishek",
+// age:28
+// }
+// const person2={
+// firstName: "Abhishek",
+// age:18
+// }
+// about.apply(person1,["dance","bandeya"]);
 
-const person3={
-firstName: "Abhishek",
-age:18,
-about:()=>{
-    console.log(this);
-    console.log(this.firstName,this.age)
-}
-}
+// const person3={
+// firstName: "Abhishek",
+// age:18,
+// about:()=>{
+//     console.log(this);
+//     console.log(this.firstName,this.age)
+// }
+// }
 
-person3.about(person1);
+// person3.about(person1);
+
+// 1. Fetch the data from this API.  (Response of objects containing photos)
+// 2. Create a function which will give me the array of these objects in some interval, 
+// for eg. array of object from startIndex to lastIndex (Paginated function)
+// 3. Display these photos in UI , one photo in one column and row ( Like instagram)
+// 4. Implement Infinite scroll (Load 10. Photos at first load and whenever user scrolls to the last photo)
+
