@@ -16,7 +16,7 @@ let fruits = ["aaple", "mango", "banana"]
 console.log(fruits[1]); // mango
 // Note: array is immutable so we can directly replace or add the elements in the array
 fruits[2] = "kiwi";
-console.log(fruits);// apple, mango, kiwi -- it replace the banana why because it is in the 2th index of array
+console.log(fruits);// apple, mango, kiwi -- it replace the banana why??? because it is in the [2th] index of array.
 console.log(fruits.length);
 console.log(typeof fruits);
 

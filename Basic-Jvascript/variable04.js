@@ -9,7 +9,7 @@
 
 // variable name are case sensitive used them same as you defined in your code file other it will give your error
 
-// "use Strict";
+// "use Strict"; 
 
 // declare variable
 // use variable
