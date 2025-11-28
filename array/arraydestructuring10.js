@@ -123,9 +123,9 @@ configure();
 
 const people = [
   { name: "Abhishek Thakur", age: 26 },
-  { name: "Shweta", age: 26 },
+  { name: "Sakshi", age: 26 },
   { name: "Reetika", age: 26 },
-  { name: "Radhika", age:26 }
+  { name: "Rohit", age:26 }
 ];
 
 for (const { name, age } of people) {
