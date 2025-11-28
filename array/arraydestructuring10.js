@@ -134,9 +134,9 @@ for (const { name, age } of people) {
 
 // Output:
 // Abhishek Thakur is 26 years old
-// Shweta is 26 years old
-// Reetika is 25 years old
-// Rohit is 25 years old
+// Sakshi is 26 years old
+// Reetika is 26 years old
+// Rohit is 26 years old
 
 // Destructuring with Promises
 // Destructuring can be used to handle multiple promises and their results.
