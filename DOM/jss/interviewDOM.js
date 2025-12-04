@@ -256,7 +256,7 @@ document.querySelector('ul').addEventListener('click', (event) => {
 //   <li>Item 2</li>
 //   <li>Item 3</li>
 // </ul>
-Explanation:
+//Explanation:
 function setupSearchFilter() {
   // Step 1: Get references to the input field and the list
   const input = document.getElementById('searchInput');
