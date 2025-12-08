@@ -47,6 +47,8 @@ const numm=[1,2,3,4,5];
 numm.forEach((numb,index)=>{
 console.log(`index is ${index} num is ${numb*2}`);
 });
+
+//
 const users=[
     {firstName: "Abishek",age:27},
 ]

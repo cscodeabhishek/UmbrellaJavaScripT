@@ -63,7 +63,7 @@ function changeText(element, text, color, time, onSuccessCallback, onFailureCall
   },time)
 }
 // pyramid of doom
-changeText(heading1, "one","violet",1000,()=>{
+changeText(heading1, "one","pink",1000,()=>{
   changeText(heading2, "two","purple",2000,()=>{
     changeText(heading3, "three","red",1000,()=>{
       changeText(heading4, "four","pink",1000,()=>{

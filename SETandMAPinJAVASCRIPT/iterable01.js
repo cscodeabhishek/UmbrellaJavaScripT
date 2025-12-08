@@ -45,7 +45,6 @@ for(let item of items){
 // what is array like object?
 // having length property and we can access them from index. example is String
 const firstNamee="HARSHITAA";
-console.log(firstNamee.length)
+console.log(firstNamee.length)//op is 9
 console.log(firstNamee[0]) // op: H
-//op is 9
 
